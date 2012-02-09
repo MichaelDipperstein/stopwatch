@@ -9,7 +9,7 @@
 #
 ############################################################################
 #
-# Stopwatch: An ANSI C/C++ Stopwatch Library
+# Stopwatch: An POSIX C/C++ Stopwatch Library
 # Copyright (C) 2011 by Michael Dipperstein (mdipper@alumni.cs.ucsb.edu)
 #
 # This file is part of the stopwatch library.
@@ -33,8 +33,8 @@ CC = gcc
 LDPP = g++
 LD = gcc
 CPPFLAGS = -O2 -Wall -pedantic -c
-CFLAGS = -O2 -Wall -ansi -pedantic -c
-LDFLAGS = -O2 -o
+CFLAGS = -O2 -Wall -pedantic -c
+LDFLAGS = -O2 -lrt -o
 
 # Treat NT and non-NT windows the same
 ifeq ($(OS),Windows_NT)

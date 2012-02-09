@@ -10,7 +10,7 @@
 *
 ****************************************************************************
 *
-* Stopwatch: An ANSI C/C++ Stopwatch Library
+* Stopwatch: A POSIX C/C++ Stopwatch Library
 * Copyright (C) 2011 by Michael Dipperstein (mdipper@alumni.cs.ucsb.edu)
 *
 * This file is part of the stopwatch library.
@@ -35,7 +35,7 @@
 /***************************************************************************
 *                             INCLUDED FILES
 ***************************************************************************/
-#include <sys/time.h>
+#include <time.h>
 
 /***************************************************************************
 *                                CONSTANTS
@@ -54,8 +54,8 @@
 typedef struct
 {
     unsigned char isRunning;
-    struct timeval startTime;
-    struct timeval runningTime;
+    struct timespec startTime;
+    struct timespec runningTime;
 }  stopwatch_t;
 
 #if defined __cplusplus
@@ -91,9 +91,9 @@ class stopwatch_c
         {
             watchData.isRunning = FALSE;
             watchData.startTime.tv_sec = 0;
-            watchData.startTime.tv_usec = 0;
+            watchData.startTime.tv_nsec = 0;
             watchData.runningTime.tv_sec = 0;
-            watchData.runningTime.tv_usec = 0;
+            watchData.runningTime.tv_nsec = 0;
         };
 
         ~stopwatch_c(void) {};

@@ -1,6 +1,6 @@
 DESCRIPTION
 -----------
-This archive contains a simple and readable an ANSI C/C++ library providing
+This archive contains a simple and readable an POSIX C/C++ library providing
 basic stopwatch functionality.  The library attempts to maintain microsecond
 accuracy for timing, but reports values in milliseconds.  The actual accuracy
 is platform dependent.
@@ -79,6 +79,8 @@ stopWatch.Resume();
 HISTORY
 -------
 11/07/11  - Initial release
+02/08/12  - Replace gettimeofday() with clock_gettime to be resilient to time
+            adjustments.
 
 AUTHOR
 ------

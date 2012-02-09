@@ -9,7 +9,7 @@
 *
 ****************************************************************************
 *
-* Stopwatch: An ANSI C/C++ Stopwatch Library
+* Stopwatch: A POSIX C/C++ Stopwatch Library
 * Copyright (C) 2011 by Michael Dipperstein (mdipper@alumni.cs.ucsb.edu)
 *
 * This file is part of the stopwatch library.
