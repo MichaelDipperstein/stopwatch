@@ -32,8 +32,8 @@ CPP = g++
 CC = gcc
 LDPP = g++
 LD = gcc
-CPPFLAGS = -O2 -Wall -pedantic -c
-CFLAGS = -O2 -Wall -pedantic -c
+CPPFLAGS = -O2 -Wall -Wextra -pedantic -c
+CFLAGS = -O2 -Wall -Wextra -pedantic -c
 LDFLAGS = -O2 -lrt -o
 
 # Treat NT and non-NT windows the same

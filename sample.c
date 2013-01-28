@@ -49,12 +49,11 @@
 *                of the functions in the stopwatch library.  There's 
 *                nothing really interesting about the code.  It just
 *                sleeps for periods and reports the stopwatch time.
-*   Parameters : argc - number of parameters
-*                argv - parameter list
+*   Parameters : None
 *   Effects    : Stopwatch is run measuring various sleep cycles.
 *   Returned   : 0 is always returned.
 ***************************************************************************/
-int main(int argc, char *argv[])
+int main()
 {
     stopwatch_t stopWatch;
     int totalSleep;
