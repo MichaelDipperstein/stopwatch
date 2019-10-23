@@ -10,7 +10,7 @@
 ############################################################################
 #
 # Stopwatch: An POSIX C/C++ Stopwatch Library
-# Copyright (C) 2011 by Michael Dipperstein (mdipper@alumni.cs.ucsb.edu)
+# Copyright (C) 2011 by Michael Dipperstein (mdipperstein@gmail.com)
 #
 # This file is part of the stopwatch library.
 #
